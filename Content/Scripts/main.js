@@ -12,5 +12,5 @@
             $(".middle").toggleClass("green");
         });
 
-    }, 100);
+    }, 500);
 });
