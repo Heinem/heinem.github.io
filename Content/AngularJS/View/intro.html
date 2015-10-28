@@ -1,12 +1,19 @@
-﻿<div class="outer">
-    <div class="middle">
-        <div class="inner">
-            <div>
-                <div ng-click="go('/')" class="circle orange"></div>
-                <div ng-click="go('/')" class="circle blue"></div>
-                <div ng-click="go('/')" class="circle green"></div>
+﻿
+    <div class="outer">
+        <div class="middle {{instaClass}}">
+            <div class="inner">
+                <div>
+                    <div ng-click="go('/tri')" class="circle orange"></div>
+                    <div ng-click="go('/bike')" class="circle blue"></div>
+                    <div ng-click="go('/run')" class="circle green"></div>
+                </div>
+                <h1 ng-click="go('/instagram')" ng-mouseenter="showInstagram()" ng-mouseleave="hideInstagram()">{{teamRunaway}}</h1>
             </div>
-            <h1>TEAM RUNAWAY</h1>
         </div>
     </div>
-</div>
+
+    <div class="insta-intro overflow-hide" ng-show="instagram" ng-init="instagram=false">
+        <div class="instagram-block" ng-repeat="p in pics">
+            <img ng-src="{{p.images.low_resolution.url}}" />
+        </div>
+    </div>
