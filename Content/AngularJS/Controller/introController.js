@@ -7,16 +7,16 @@
          $location.path(path);
      };
 
-     $scope.ChangeBackground = function(color) {
+     $scope.ChangeBackground = function (color) {
          $scope.colorClass = color;
      }
 
-     $scope.showInstagram = function() {
+     $scope.showInstagram = function () {
          $scope.instagram = true;
          $scope.instaClass = "insta-hover";
          console.log = "Inn";
          $scope.teamRunaway = "#TeamRunawayNorway";
-
+         $scope.blackWhite = "black-white";
      };
 
      $scope.hideInstagram = function () {
@@ -24,10 +24,17 @@
          $scope.instaClass = "";
          console.log = "out";
          $scope.teamRunaway = "TEAM RUNAWAY";
-
+         $scope.blackWhite = "";
      };
 
      instagram.getInstagramImg().success(function (data) {
          $scope.pics = data.data;
      });
+
+     //$(window).scroll(function () {
+     //    if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+     //        console.log("bottom");
+     //    }
+     //});
+
  }]);

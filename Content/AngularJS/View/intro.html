@@ -2,9 +2,9 @@
     <div class="middle {{colorClass}} {{instaClass}}">
         <div class="inner">
             <div>
-                <div ng-click="go('/tri')" ng-mouseenter="ChangeBackground('orange')" ng-mouseleave="ChangeBackground('')" class="circle orange"></div>
-                <div ng-click="go('/bike')" ng-mouseenter="ChangeBackground('blue')" ng-mouseleave="ChangeBackground('')" class="circle blue"></div>
-                <div ng-click="go('/run')" ng-mouseenter="ChangeBackground('green')" ng-mouseleave="ChangeBackground('')" class="circle green"></div>
+                <div ng-click="go('/tri')" ng-mouseenter="ChangeBackground('orange')" ng-mouseleave="ChangeBackground('')" class="circle orange {{blackWhite}}"></div>
+                <div ng-click="go('/bike')" ng-mouseenter="ChangeBackground('blue')" ng-mouseleave="ChangeBackground('')" class="circle blue {{blackWhite}}"></div>
+                <div ng-click="go('/run')" ng-mouseenter="ChangeBackground('green')" ng-mouseleave="ChangeBackground('')" class="circle green {{blackWhite}}"></div>
             </div>
             <h1 ng-click="go('/instagram')" ng-mouseenter="showInstagram()" ng-mouseleave="hideInstagram()">{{teamRunaway}}</h1>
         </div>
