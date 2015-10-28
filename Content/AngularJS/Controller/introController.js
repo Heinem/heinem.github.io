@@ -2,10 +2,14 @@
  function introController($scope, $routeParams, $location, instagram) {
 
      $scope.teamRunaway = "TEAM RUNAWAY";
-     
+     $scope.colorClass = "";
      $scope.go = function (path) {
          $location.path(path);
      };
+
+     $scope.ChangeBackground = function(color) {
+         $scope.colorClass = color;
+     }
 
      $scope.showInstagram = function() {
          $scope.instagram = true;
