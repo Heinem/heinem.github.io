@@ -311,8 +311,9 @@ header {
   .newsletter input {
     line-height: 40px;
     font-size: 12px; }
-    .newsletter input[type="email"] {
-      min-width: 400px; }
+    @media (min-width: 767.98px) {
+      .newsletter input[type="email"] {
+        min-width: 400px; } }
   .newsletter .button {
     display: inline-block;
     font-weight: 700; }
