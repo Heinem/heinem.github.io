@@ -1,0 +1,47 @@
+@import '_font';
+@import '_variables';
+@import '_buttons';
+@import '_links';
+@import '_given';
+@import '_forms';
+@import '_header';
+@import '_intro';
+@import '_price-list';
+@import '_daybook';
+@import '_slider';
+@import '_newsletter';
+@import '_footer';
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Roboto;
+    font-weight: 400;
+    color: $textColor;
+    margin: 0;
+    padding: 0;
+    background-color: $beige;  
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .inner-wrapper {
+        flex: 1;
+
+        .innhold {
+            height: 400px;
+        }
+    }
+}

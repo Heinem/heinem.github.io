@@ -1,0 +1,28 @@
+.slider {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: linear-gradient(to left, $brown 50%,$beige 50%);
+
+    .carousel-item {
+        img {
+            width: 100%;
+        }
+
+        h3 {
+            position: absolute;
+            top: 36%;
+            max-width: 200px;
+
+            &.left {
+                left: 20%;
+            }
+            &.right {
+                right: 20%;
+            }
+        }
+
+    }
+
+}

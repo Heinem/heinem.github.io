@@ -1,0 +1,30 @@
+
+input {
+    border-radius: $borderRadius;
+    border: none;
+    color: $textColor;
+    outline: none;
+
+    &[type="email"], &[type="text"] { 
+        &:focus {
+            border: 1px solid $green;
+        }
+    }
+
+    &[type=email] {
+        padding-left: 10px;
+
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #CCC;
+        opacity: 1; /* Firefox */
+        }
+    
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #CCC;
+        }
+        
+        &::-ms-input-placeholder { /* Microsoft Edge */
+            color: #CCC
+        }
+    }
+}

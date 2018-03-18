@@ -1,0 +1,28 @@
+footer {
+    background-color: $blue;
+    padding-top: 60px;
+    padding-bottom: 90px;
+
+    .footer-logo {
+        display: block;
+        width: 80px;
+        img {
+            width: 100%;
+        }
+    }
+
+    ul {
+        li {
+            padding-top: 3px;
+            padding-bottom: 3px;
+            a {
+                color: #EEE;
+                font-weight: 300;
+                &:hover {
+                    color: $green;                
+                }    
+            }
+        }
+    }
+
+}

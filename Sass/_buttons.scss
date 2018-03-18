@@ -1,0 +1,65 @@
+.button {
+    border-radius: $borderRadius;
+    padding: 2px 7px 2px 7px;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: $blue;     
+    &.button-primary {
+        background-color: $green;
+        color: $blue;
+        padding: 8px 20px 8px 20px;
+        
+        &:hover {
+            background-color: $blue;
+            color: $green;
+            text-decoration: none;            
+        }
+        &:active {
+            background-color: $textColor;
+            color: $green;            
+        }
+        &:focus {
+            background-color: $blue;
+            color: $green;            
+        }
+    }
+
+    &.button-orange {
+        background-color: $orange;
+        color: $textColor;
+        padding-right: 20px;
+        padding-left: 20px;
+        &:hover {
+            background-color: $green;
+            text-decoration: none;
+            
+        }
+        &:active {
+            background-color: $green;
+        }
+        &:focus {
+            background-color: $green-active
+        }
+    }
+
+    &.button-white {
+        background-color: #FFF;
+        color: $textColor;
+        padding: 8px 20px 8px 20px;
+        &:hover {
+            background-color: $green;
+            text-decoration: none;
+            
+        }
+        &:active {
+            background-color: $green;
+        }
+        &:focus {
+            background-color: $green-active
+        }
+    }
+}

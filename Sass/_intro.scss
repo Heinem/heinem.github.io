@@ -1,0 +1,58 @@
+.intro {
+    margin-bottom: -200px;
+
+    @media (max-width: 1199.98px) { 
+        margin-bottom: -100px;
+     }
+
+    @media (max-width: 767.98px) { 
+        margin: 0px;
+     }
+
+
+
+    .intro-header-wrapper {
+        max-width: 575px;
+        margin: 50px auto;
+        text-align: center;
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+  
+    }    
+    img {
+        width: 100%;
+    }
+
+    .intro-item {
+        margin-bottom: 30px;
+
+        @media (max-width: 575.98px) { 
+            text-align: center;
+         }
+
+
+    &.push-down {
+        margin-top: 120px;
+    }
+
+        .icon {
+            padding: 0;
+        }
+
+        .header {
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+
+    }
+
+}

@@ -1,0 +1,71 @@
+.daybook {
+    background-image: url('../Media/Living_Room.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;       
+    padding-top: 100px;
+    padding-bottom: 125px;
+
+    .book {
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        .item {
+            margin-bottom: 20px;
+
+            .green-check {
+                background-image: url('../Media/given_green_check_icon.png');
+                width: 20px;
+                display: inline-block;
+                height: 24px;
+                background-position: left bottom;
+                background-size: 20px 24px;
+                background-repeat: no-repeat;
+                margin-right: 15px;
+                vertical-align: bottom;
+            } 
+
+            .orange-check {
+                background-image: url('../Media/given_orange_icon.png');
+                width: 27px;
+                display: inline-block;
+                height: 24px;
+                background-position: left bottom;
+                background-size: 27px 24px;
+                background-repeat: no-repeat;
+                margin-right: 15px;
+                vertical-align: bottom;                
+            } 
+        }
+
+        .left {  
+            padding-top: 50px;
+            padding-left: 100px;
+            padding-bottom: 175px;            
+            background-color: $beige;    
+        }
+        .right {
+            padding-top: 50px;
+            padding-bottom: 175px;            
+            padding-left: 100px;
+            background-color: #FFF;  
+        }
+
+        .push-up {
+            margin-top: -130px;
+
+            .button-orange {
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+
+            .link {
+                color: #007bff;
+            }
+
+
+        }
+    }
+}
