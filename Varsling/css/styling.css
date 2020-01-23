@@ -1,0 +1,70 @@
+html, body {
+    height: 100%;
+    background-color: #2577A8;
+    background-image: url("../image/backgrounds/metalic.jpg");
+    background-image: url("../image/backgrounds/metalic2.jpg");
+    background-size: auto 100%;
+    background-position: center;
+    padding: 0 0;
+    margin: 0 0;
+    font-family: futura;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header > img {
+  margin:  20px auto -6px auto;
+  width: 300px;
+}
+
+.header > .header-text {
+  font-size: 40px;
+  color: #FFF;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .flex-container > .item {
+    background-color: #dc4649;
+    color: #FFF;
+    width: 300px;
+    min-height: 75px;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    box-shadow: 2px 2px 10px #000;
+    cursor: pointer;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+  }
+
+  .flex-container > .item:hover {
+    background-color: #e96163;
+}
+
+.flex-container > .item > a {
+  color: #FFF;
+  height: 100%;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+}
+
+/* .item-a {
+  background-color: blue;
+  height: 30px;
+} */
+
+.back {
+  margin-top: 30px;
+}
